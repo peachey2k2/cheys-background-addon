@@ -1,6 +1,8 @@
 @tool
 extends EditorPlugin
 
+var base:Control
+
 const TOOL = preload("res://addons/cba/tool.tscn")
 var settings:Dictionary = {}
 var bg:TextureRect
@@ -13,25 +15,26 @@ func _exit_tree():
 
 func _enter_tree():
 	if not Engine.is_editor_hint(): return
+	base = EditorInterface.get_base_control()
 	bg = TextureRect.new()
 	bg.name = "Editor Background"
 	bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	bg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	EditorInterface.get_base_control().add_child.call_deferred(bg)
+	base.add_child.call_deferred(bg)
 	# move it to the top of the tree so it's behind all the UI
-	EditorInterface.get_base_control().move_child.call_deferred(bg, 0)
+	base.move_child.call_deferred(bg, 0)
 	await bg.ready
 	theme = preload("res://addons/cba/theme.tres")
-	EditorInterface.get_base_control().theme = theme
-	await EditorInterface.get_base_control().get_tree().physics_frame
+	base.theme = theme
+	await base.get_tree().physics_frame
 	load_settings()
 	
 	add_tool_menu_item("Backgrounds", func():
 		if is_instance_valid(tool): printerr("There is already a background picker window open."); return
 		tool = TOOL.instantiate()
 		tool.main = self
-		EditorInterface.get_base_control().add_child(tool)
+		base.add_child(tool)
 		tool.start()
 		tool.popup_centered()
 	)
@@ -113,12 +116,15 @@ var theme_blacklist := [
 	#"ItemList", # 210
 	#"OptionButton" #185
 ]
+
+signal reallow_notify
+
 # in godot, not even a single node uses a theme. they all rely on overrides
 # so we have to manually edit each and every override every single time
 func override_all(col:Color):
 	var count := 0
 	benchmark("set all overrides")
-	for node:Control in get_children_recursive(EditorInterface.get_base_control()):
+	for node:Control in get_children_recursive(base):
 		var class_str = node.get_class() 
 		#if not theme_blacklist.has(class_str):
 		match class_str:
@@ -129,17 +135,20 @@ func override_all(col:Color):
 			#"EditorDebuggerNode": replace_color(node.get_child(0), "panel", Color.TRANSPARENT)
 			"PanelContainer":     replace_color(node, "panel", col)
 			"Panel":              replace_color(node, "panel", col)
-				#_: continue
-			#count += 1
-	print("overriden %d nodes" % count)
+			_: continue
+		print(class_str)
+	reallow_notify.emit()
 	benchmark_end.emit("set all overrides")
 
 func replace_color(node:Control, boxname:String, col:Color):
+	node.begin_bulk_theme_override()
 	var sbox := node.get_theme_stylebox(boxname)
 	if (sbox as StyleBoxFlat) == null:
 		sbox = StyleBoxFlat.new()
 	sbox.bg_color = col
 	node.add_theme_stylebox_override(boxname, sbox)
+	await reallow_notify
+	node.end_bulk_theme_override()
 
 func get_children_recursive(node:Node) -> Array[Control]:
 	var list:Array[Control]
