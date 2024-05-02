@@ -1,4 +1,6 @@
-[gd_resource type="Theme" load_steps=6 format=3 uid="uid://cbdjaabpm8jfk"]
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://cbdjaabpm8jfk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uwgh4"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d4h1q"]
 
@@ -11,11 +13,12 @@ content_margin_right = 11.0
 bg_color = Color(0, 0, 0, 0.470588)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ccpqn"]
-bg_color = Color(0, 0, 0, 0.27451)
+bg_color = Color(0, 0, 0, 0.5)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_du50c"]
 
 [resource]
+CodeEdit/styles/normal = SubResource("StyleBoxEmpty_uwgh4")
 ItemList/styles/panel = SubResource("StyleBoxEmpty_d4h1q")
 TabBar/styles/tab_selected = SubResource("StyleBoxFlat_i6n3m")
 TabBar/styles/tab_unselected = SubResource("StyleBoxFlat_vfr7f")
