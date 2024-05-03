@@ -1,0 +1,179 @@
+[gd_resource type="Theme" load_steps=26 format=3 uid="uid://ddhe5x5eqepiq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b86yl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nbv0r"]
+bg_color = Color(0, 0, 0, 0.71)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2hiop"]
+content_margin_left = 4.0
+content_margin_top = 6.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0.71)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g0bn6"]
+content_margin_left = 4.0
+content_margin_top = 0.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0.71)
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ap3k3"]
+bg_color = Color(0.617575, 0.626378, 0.219465, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lq3sb"]
+bg_color = Color(0, 0, 0, 0.71)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cimxn"]
+bg_color = Color(0.636768, 0.585092, 0.598434, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7y23o"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gciqp"]
+bg_color = Color(0.71993, 0.58247, 0.18956, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_27pgc"]
+bg_color = Color(0.87666, 0.482054, 0.185217, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oasfv"]
+content_margin_left = 2.0
+content_margin_top = 0.0
+content_margin_right = 2.0
+content_margin_bottom = 0.0
+bg_color = Color(0, 0, 0, 0.71)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4530x"]
+bg_color = Color(0.266667, 0.647059, 0.819608, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pdl2u"]
+bg_color = Color(0, 0.726823, 0.14553, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dbt8g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rfsps"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kgvj6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e8j1x"]
+content_margin_left = 11.0
+content_margin_top = 5.0
+content_margin_right = 11.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 0.71)
+border_width_top = 2
+border_color = Color(0.333333, 0.486275, 0.72549, 1)
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qguiq"]
+content_margin_left = 11.0
+content_margin_top = 5.0
+content_margin_right = 11.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 0.355)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m0e3f"]
+bg_color = Color(0, 0, 0, 0.71)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dlwhm"]
+content_margin_left = 11.0
+content_margin_top = 5.0
+content_margin_right = 11.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 0.71)
+border_width_top = 2
+border_color = Color(0.333333, 0.486275, 0.72549, 1)
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yc2sb"]
+content_margin_left = 11.0
+content_margin_top = 5.0
+content_margin_right = 11.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 0.355)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h3no3"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0, 0, 0, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xk4bb"]
+content_margin_left = 4.0
+content_margin_top = 6.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0.355)
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iamab"]
+content_margin_left = 11.0
+content_margin_top = 5.0
+content_margin_right = 11.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 0.71)
+border_width_top = 2
+border_color = Color(0.333333, 0.486275, 0.72549, 1)
+anti_aliasing = false
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vxe64"]
+
+[resource]
+CodeEdit/styles/normal = SubResource("StyleBoxEmpty_b86yl")
+EditorStyles/styles/Background = SubResource("StyleBoxFlat_nbv0r")
+EditorStyles/styles/BottomPanel = SubResource("StyleBoxFlat_2hiop")
+EditorStyles/styles/BottomPanelDebuggerOverride = SubResource("StyleBoxFlat_g0bn6")
+EditorStyles/styles/CanvasItemInfoOverlay = SubResource("StyleBoxFlat_ap3k3")
+EditorStyles/styles/Content = SubResource("StyleBoxFlat_lq3sb")
+EditorStyles/styles/ContextualToolbar = SubResource("StyleBoxFlat_cimxn")
+EditorStyles/styles/DebuggerPanel = SubResource("StyleBoxFlat_7y23o")
+EditorStyles/styles/DictionaryAddItem = SubResource("StyleBoxFlat_gciqp")
+EditorStyles/styles/Focus = SubResource("StyleBoxFlat_27pgc")
+EditorStyles/styles/LaunchPadNormal = SubResource("StyleBoxFlat_oasfv")
+EditorStyles/styles/MenuPanel = SubResource("StyleBoxFlat_4530x")
+EditorStyles/styles/PanelForeground = SubResource("StyleBoxFlat_pdl2u")
+EditorStyles/styles/ScriptEditor = SubResource("StyleBoxEmpty_dbt8g")
+EditorStyles/styles/ScriptEditorPanel = SubResource("StyleBoxFlat_rfsps")
+ItemList/styles/panel = SubResource("StyleBoxEmpty_kgvj6")
+TabBar/styles/tab_selected = SubResource("StyleBoxFlat_e8j1x")
+TabBar/styles/tab_unselected = SubResource("StyleBoxFlat_qguiq")
+TabContainer/styles/panel = SubResource("StyleBoxFlat_m0e3f")
+TabContainer/styles/tab_selected = SubResource("StyleBoxFlat_dlwhm")
+TabContainer/styles/tab_unselected = SubResource("StyleBoxFlat_yc2sb")
+TabContainer/styles/tabbar_background = SubResource("StyleBoxFlat_h3no3")
+TabContainerOdd/styles/panel = SubResource("StyleBoxFlat_xk4bb")
+TabContainerOdd/styles/tab_selected = SubResource("StyleBoxFlat_iamab")
+Tree/styles/panel = SubResource("StyleBoxEmpty_vxe64")

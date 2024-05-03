@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cqkxegtagb5ts"]
+[gd_scene load_steps=7 format=3 uid="uid://cqkxegtagb5ts"]
 
 [ext_resource type="Script" path="res://addons/cba/tool.gd" id="1_yg3st"]
 [ext_resource type="Texture2D" uid="uid://cax47hdq4ojmp" path="res://icon.svg" id="2_tsv1u"]
@@ -15,12 +15,15 @@ border_color = Color(0.691357, 0.691357, 0.691357, 1)
 shadow_color = Color(0, 0, 0, 0.729412)
 shadow_size = 2
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5s6hr"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p8vlj"]
 bg_color = Color(0.177332, 0.180983, 0.215343, 1)
 
 [sub_resource type="Theme" id="Theme_csmr1"]
 Button/font_sizes/font_size = 14
 Button/styles/normal = SubResource("StyleBoxFlat_l27jc")
+ColorPickerButton/styles/normal = SubResource("StyleBoxEmpty_5s6hr")
 Label/font_sizes/font_size = 14
 Panel/styles/panel = SubResource("StyleBoxFlat_p8vlj")
 
@@ -126,26 +129,17 @@ custom_minimum_size = Vector2(196, 175)
 layout_mode = 2
 theme = SubResource("Theme_csmr1")
 
-[node name="Control" type="Control" parent="HBoxContainer/VBoxContainer2"]
-custom_minimum_size = Vector2(0, 4)
-layout_mode = 2
-
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer2"]
 layout_mode = 2
-text = "Editor UI Alpha"
+theme_override_constants/line_spacing = -6
+text = "UI Color
+(changing causes lag)"
 horizontal_alignment = 1
 
-[node name="ui_alpha" type="HSlider" parent="HBoxContainer/VBoxContainer2"]
-custom_minimum_size = Vector2(0, 10)
+[node name="ui_color" type="ColorPickerButton" parent="HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
-max_value = 1.0
-step = 0.01
-value = 0.5
-
-[node name="Control2" type="Control" parent="HBoxContainer/VBoxContainer2"]
-custom_minimum_size = Vector2(0, 2)
-layout_mode = 2
 
 [node name="Label2" type="Label" parent="HBoxContainer/VBoxContainer2"]
 layout_mode = 2
