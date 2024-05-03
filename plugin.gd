@@ -17,7 +17,7 @@ func _exit_tree():
 	remove_tool_menu_item("Backgrounds")
 
 func _enter_tree():
-	Benchmark.start("init")
+	#Benchmark.start("init")
 	if not Engine.is_editor_hint(): return
 	base = EditorInterface.get_base_control()
 	editor_settings = EditorInterface.get_editor_settings()
@@ -49,7 +49,7 @@ func _enter_tree():
 		tool.start()
 		tool.popup_centered()
 	)
-	Benchmark.end("init")
+	#Benchmark.end("init")
 
 #var setting_refresh_filter := [
 	#"interface/theme/base_color"
@@ -134,7 +134,7 @@ func save_settings():
 
 #var new_theme:Theme
 func change_theme_color(col:Color):
-	Benchmark.start("change theme color")
+	#Benchmark.start("change theme color")
 	
 	#new_theme = theme.duplicate(true)
 	var controls_list = get_all_controls([base])
@@ -177,7 +177,7 @@ func change_theme_color(col:Color):
 	#editor_settings.mark_setting_changed("interface/theme/custom_theme")
 	#theme.changed.emit() # futile
 	
-	Benchmark.end("change theme color")
+	#Benchmark.end("change theme color")
 
 func get_all_controls(nodes:Array[Node]) -> Array[Node]:
 	var out:Array[Node] = []
