@@ -13,3 +13,9 @@ export_presets.cfg
 .mono/
 data_*/
 mono_crash.*.json
+
+# project-specific ignores
+icon.svg
+icon.svg.import
+project.godot
+addons/cba/icon.png.import
