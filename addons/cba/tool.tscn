@@ -1,7 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://cqkxegtagb5ts"]
+[gd_scene load_steps=6 format=3 uid="uid://cqkxegtagb5ts"]
 
 [ext_resource type="Script" path="res://addons/cba/tool.gd" id="1_yg3st"]
-[ext_resource type="Texture2D" uid="uid://cax47hdq4ojmp" path="res://icon.svg" id="2_tsv1u"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l27jc"]
 content_margin_left = 6.0
@@ -55,7 +54,6 @@ theme = SubResource("Theme_csmr1")
 
 [node name="TextureRect" type="TextureRect" parent="PanelContainer"]
 layout_mode = 2
-texture = ExtResource("2_tsv1u")
 expand_mode = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
