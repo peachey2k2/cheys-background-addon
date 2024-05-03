@@ -19,6 +19,7 @@ func _exit_tree():
 func _enter_tree():
 	#Benchmark.start("init")
 	if not Engine.is_editor_hint(): return
+	
 	base = EditorInterface.get_base_control()
 	editor_settings = EditorInterface.get_editor_settings()
 	#editor_settings.settings_changed.connect(_settings_changed)
@@ -120,13 +121,25 @@ func load_settings():
 		var file := FileAccess.open("res://addons/cba/config.json", FileAccess.READ)
 		if file == null:
 			file = FileAccess.open("res://addons/cba/config.json", FileAccess.WRITE_READ)
-			assert(file != null, "Error loading the file.")
-			settings = {}
+			assert(file != null, "Error opening file.")
+			return
 		else:
 			settings = JSON.parse_string(file.get_as_text())
 			file.close()
-			for s in settings.keys():
-				change_setting(settings[s], s, true)
+	else:
+		var file := FileAccess.open("res://addons/cba/config.json", FileAccess.WRITE)
+		var defaults := {
+			"bg_alpha": 0.69,
+			"filter": 0.0,
+			"image": ProjectSettings.globalize_path("res://addons/cba/images/default.png"),
+			"stretch": 1,
+			"ui_color": "00000088"
+		}
+		file.store_string(JSON.stringify(defaults, "\t"))
+		settings = defaults
+		file.close()
+	for s in settings.keys():
+		change_setting(settings[s], s, true)
 
 func save_settings():
 	var file := FileAccess.open("res://addons/cba/config.json", FileAccess.WRITE)
