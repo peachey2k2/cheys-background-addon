@@ -9,6 +9,6 @@ Either clone this repository or download it as zip, then put the `cba` folder in
 Simply go to `Project > Tools > Backgrounds`. That should open up the configuration window.
 
 > [!IMPORTANT]
-> Changing the `UI color will temporarily freeze your editor. Don't worry, that's supposed to happen.
+> Changing the UI color will temporarily freeze your editor. Don't worry, that's supposed to happen.
 
 ![image](https://github.com/peachey2k2/cheys-background-addon/assets/100072467/c6d28ac6-733e-4112-8511-ceb0f2cc5c5a)
