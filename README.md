@@ -7,6 +7,8 @@ A simple plugin to put a background image behind your Godot editor.
 # Installation
 Either clone this repository or download it as zip, then put the `cba` folder into your `res://addons/` folder. If you don't have an `addons` folder, you can create it yourself.
 
+You can also download it from the [asset library](https://godotengine.org/asset-library/asset/2933), which you can also use within the editor.
+
 # Usage
 Simply go to `Project > Tools > Backgrounds`. That should open up the configuration window.
 
