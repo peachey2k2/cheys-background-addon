@@ -101,12 +101,14 @@ func change_setting(value:Variant, setting:String, update_ui:bool = false, updat
 				change_theme_color(value)
 				settings["ui_color"] = value.to_html()
 			value = null
-		"bg_alpha":
-			if update_setting: bg.modulate = Color(value, value, value, 1)
+		"bg_modulate":
+			if value is String: value = Color(value)
+			if update_setting: bg.modulate = value
 			if is_prev_ready:
-				tool.preview.modulate.a = value
+				tool.preview.modulate = value
 				if update_ui:
-					tool.get_node("HBoxContainer/VBoxContainer2/bg_alpha").set_value_no_signal(value)
+					tool.get_node("HBoxContainer/VBoxContainer2/bg_modulate").color = value
+			value = value.to_html()
 	if value != null: settings[setting] = value
 
 func load_image(path:String) -> Texture2D:
@@ -129,11 +131,11 @@ func load_settings():
 	else:
 		var file := FileAccess.open("res://addons/cba/config.json", FileAccess.WRITE)
 		var defaults := {
-			"bg_alpha": 0.69,
 			"filter": 0.0,
 			"image": ProjectSettings.globalize_path("res://addons/cba/images/default.png"),
 			"stretch": 1,
-			"ui_color": "00000088"
+			"ui_color": "00000088",
+			"bg_modulate": "ffffffb0",
 		}
 		file.store_string(JSON.stringify(defaults, "\t"))
 		settings = defaults
@@ -186,13 +188,6 @@ func change_theme_color(col:Color):
 	# trigger an update
 	theme.get_stylebox("Background", "EditorStyles").emit_changed()
 	
-	#theme.merge_with(new_theme)
-	
-	#for node:Control in controls_list:
-		#node.end_bulk_theme_override()
-	#editor_settings.mark_setting_changed("interface/theme/custom_theme")
-	#theme.changed.emit() # futile
-	
 	#Benchmark.end("change theme color")
 
 func get_all_controls(nodes:Array[Node]) -> Array[Node]:
@@ -207,4 +202,4 @@ func change_color(type:String, name:String, col:Color):
 	var box:StyleBoxFlat = theme.get_stylebox(name, type)
 	box.set_block_signals(true)
 	box.bg_color = col
-	box.set_block_signals(false)	
+	box.set_block_signals(false)
