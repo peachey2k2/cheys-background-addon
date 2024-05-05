@@ -12,7 +12,7 @@ func start():
 	$"HBoxContainer/VBoxContainer/filter mode".item_selected.connect(main.change_setting.bind("filter"))
 	#$HBoxContainer/VBoxContainer2/ui_alpha.value_changed.connect(main.change_setting.bind("ui_alpha")) # too laggy
 	$HBoxContainer/VBoxContainer2/ui_color.popup_closed.connect(main.change_setting.bind(null, "ui_color"))
-	$HBoxContainer/VBoxContainer2/bg_alpha.value_changed.connect(main.change_setting.bind("bg_alpha"))
+	$HBoxContainer/VBoxContainer2/bg_modulate.color_changed.connect(main.change_setting.bind("bg_modulate"))
 	close_requested.connect(close)
 	preview = $PanelContainer/TextureRect # thank you onready
 	main.load_settings()
