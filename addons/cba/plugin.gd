@@ -149,7 +149,7 @@ func save_settings():
 
 #var new_theme:Theme
 func change_theme_color(col:Color):
-	#Benchmark.start("change theme color")
+	Benchmark.start("change theme color")
 	
 	#new_theme = theme.duplicate(true)
 	var controls_list = get_all_controls([base])
@@ -182,13 +182,17 @@ func change_theme_color(col:Color):
 	change_color("RichTextLabel", "normal", col3)
 	change_color("LineEdit", "normal", col3)
 	change_color("LineEdit", "read_only", col3)
+	change_color("EditorProperty", "child_bg", col3)
 	
 	change_color("EditorInspectorCategory", "bg", col2)
+	
+	# fix to old values showing up in transparent preview
+	change_color("LineEdit", "focus", Color.BLACK)
 	
 	# trigger an update
 	theme.get_stylebox("Background", "EditorStyles").emit_changed()
 	
-	#Benchmark.end("change theme color")
+	Benchmark.end("change theme color")
 
 func get_all_controls(nodes:Array[Node]) -> Array[Node]:
 	var out:Array[Node] = []
