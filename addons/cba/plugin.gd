@@ -183,6 +183,9 @@ func change_theme_color(col:Color):
 	
 	change_color("EditorInspectorCategory", "bg", col2)
 	
+	# trigger an update
+	theme.get_stylebox("Background", "EditorStyles").emit_changed()
+	
 	#theme.merge_with(new_theme)
 	
 	#for node:Control in controls_list:
@@ -202,4 +205,6 @@ func get_all_controls(nodes:Array[Node]) -> Array[Node]:
 
 func change_color(type:String, name:String, col:Color):
 	var box:StyleBoxFlat = theme.get_stylebox(name, type)
+	box.set_block_signals(true)
 	box.bg_color = col
+	box.set_block_signals(false)	
