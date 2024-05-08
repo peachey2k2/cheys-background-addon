@@ -16,3 +16,8 @@ Simply go to `Project > Tools > Backgrounds`. That should open up the configurat
 > Changing the UI color might freeze your editor for a second or two. Don't worry, that's supposed to happen.
 
 ![image](https://github.com/peachey2k2/cheys-background-addon/assets/100072467/c6d28ac6-733e-4112-8511-ceb0f2cc5c5a)
+
+# Support
+If you have a problem with the plugin, just come to my Discord server and I'll try to help.
+
+[![Discord](https://discordapp.com/api/guilds/1146846558508302366/widget.png?style=banner3)](https://discord.gg/ZuUWPaSrHa)
