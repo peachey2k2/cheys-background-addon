@@ -186,7 +186,7 @@ content_margin_right = 11.0
 content_margin_bottom = 5.0
 bg_color = Color(0, 0, 0, 0.533333)
 border_width_top = 2
-border_color = Color(0.882267, 0.656144, 0.294542, 1)
+border_color = Color(0.879275, 0.598958, 0.172197, 1)
 corner_detail = 3
 anti_aliasing = false
 
@@ -220,7 +220,7 @@ content_margin_right = 11.0
 content_margin_bottom = 5.0
 bg_color = Color(0, 0, 0, 0.533333)
 border_width_top = 2
-border_color = Color(0.882267, 0.656144, 0.294542, 1)
+border_color = Color(0.879275, 0.598958, 0.172197, 1)
 corner_detail = 3
 anti_aliasing = false
 
@@ -264,7 +264,7 @@ content_margin_right = 11.0
 content_margin_bottom = 5.0
 bg_color = Color(0, 0, 0, 0.533333)
 border_width_top = 2
-border_color = Color(0.882267, 0.656144, 0.294542, 1)
+border_color = Color(0.879275, 0.598958, 0.172197, 1)
 anti_aliasing = false
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c0v5a"]
