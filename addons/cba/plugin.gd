@@ -10,6 +10,8 @@ var bg:TextureRect
 var tool:Window
 var theme:Theme
 
+var accent_color:Color
+
 func _exit_tree():
 	bg.queue_free()
 	editor_settings.set("interface/theme/custom_theme", "")
@@ -22,6 +24,10 @@ func _enter_tree():
 	
 	base = EditorInterface.get_base_control()
 	editor_settings = EditorInterface.get_editor_settings()
+	editor_settings.settings_changed.connect(func():
+		for setting in editor_settings.get_changed_settings():
+			_setting_changed(setting)
+	)
 	#editor_settings.settings_changed.connect(_settings_changed)
 	bg = TextureRect.new()
 	bg.name = "Editor Background"
@@ -147,9 +153,16 @@ func save_settings():
 	var file := FileAccess.open("res://addons/cba/config.json", FileAccess.WRITE)
 	file.store_string(JSON.stringify(settings, "\t"))
 
+func _setting_changed(setting:String):
+	match setting:
+		"interface/theme/accent_color":
+			change_theme_color(Color(settings["ui_color"]))
+
 #var new_theme:Theme
 func change_theme_color(col:Color):
-	Benchmark.start("change theme color")
+	#Benchmark.start("change theme color")
+	
+	accent_color = editor_settings.get_setting("interface/theme/accent_color")
 	
 	#new_theme = theme.duplicate(true)
 	var controls_list = get_all_controls([base])
@@ -166,13 +179,13 @@ func change_theme_color(col:Color):
 	change_color("EditorStyles", "LaunchPadNormal", col)
 	
 	change_color("TabContainer", "panel", col)
-	change_color("TabContainer", "tab_selected", col)
+	change_color("TabContainer", "tab_selected", col, accent_color)
 	change_color("TabContainer", "tab_unselected", col2)
 	
-	change_color("TabBar", "tab_selected", col)
+	change_color("TabBar", "tab_selected", col, accent_color)
 	change_color("TabBar", "tab_unselected", col2)
 	
-	change_color("TabContainerOdd", "tab_selected", col)
+	change_color("TabContainerOdd", "tab_selected", col, accent_color)
 	change_color("TabContainerOdd", "panel", col2)
 	
 	# bordered
@@ -192,7 +205,7 @@ func change_theme_color(col:Color):
 	# trigger an update
 	theme.get_stylebox("Background", "EditorStyles").emit_changed()
 	
-	Benchmark.end("change theme color")
+	#Benchmark.end("change theme color")
 
 func get_all_controls(nodes:Array[Node]) -> Array[Node]:
 	var out:Array[Node] = []
@@ -202,8 +215,10 @@ func get_all_controls(nodes:Array[Node]) -> Array[Node]:
 		out += get_all_controls(children)
 	return out
 
-func change_color(type:String, name:String, col:Color):
+func change_color(type:String, name:String, col:Color, border = null):
 	var box:StyleBoxFlat = theme.get_stylebox(name, type)
 	box.set_block_signals(true)
 	box.bg_color = col
+	if border != null: 
+		box.border_color = border
 	box.set_block_signals(false)
