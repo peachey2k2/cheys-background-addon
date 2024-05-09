@@ -68,8 +68,7 @@ bg_color = Color(0.617575, 0.626378, 0.219465, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wrepn"]
 bg_color = Color(0, 0, 0, 0.69)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lghu3"]
-bg_color = Color(0.636768, 0.585092, 0.598434, 1)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4qoyy"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bae5w"]
 bg_color = Color(0, 0, 0, 0)
@@ -280,7 +279,7 @@ EditorStyles/styles/BottomPanel = SubResource("StyleBoxFlat_1tn6y")
 EditorStyles/styles/BottomPanelDebuggerOverride = SubResource("StyleBoxFlat_mfvec")
 EditorStyles/styles/CanvasItemInfoOverlay = SubResource("StyleBoxFlat_yxe5q")
 EditorStyles/styles/Content = SubResource("StyleBoxFlat_wrepn")
-EditorStyles/styles/ContextualToolbar = SubResource("StyleBoxFlat_lghu3")
+EditorStyles/styles/ContextualToolbar = SubResource("StyleBoxEmpty_4qoyy")
 EditorStyles/styles/DebuggerPanel = SubResource("StyleBoxFlat_bae5w")
 EditorStyles/styles/DictionaryAddItem = SubResource("StyleBoxFlat_hqa07")
 EditorStyles/styles/Focus = SubResource("StyleBoxFlat_jbgu4")
