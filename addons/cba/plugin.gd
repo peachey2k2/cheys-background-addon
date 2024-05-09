@@ -12,7 +12,7 @@ var theme:Theme
 
 var accent_color:Color
 
-func _exit_tree():
+func _disable_plugin():
 	bg.queue_free()
 	editor_settings.set("interface/theme/custom_theme", "")
 	editor_settings.set("interface/theme/preset", "Default")
@@ -28,7 +28,6 @@ func _enter_tree():
 		for setting in editor_settings.get_changed_settings():
 			_setting_changed(setting)
 	)
-	#editor_settings.settings_changed.connect(_settings_changed)
 	bg = TextureRect.new()
 	bg.name = "Editor Background"
 	bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -58,25 +57,8 @@ func _enter_tree():
 	)
 	#Benchmark.end("init")
 
-#var setting_refresh_filter := [
-	#"interface/theme/base_color"
-#] # fuck
-#var change_cooldown:SceneTreeTimer
-#func _settings_changed():
-	#if is_instance_valid(change_cooldown): return
-	#change_cooldown = base.get_tree().create_timer(3)
-	#change_cooldown.unreference()
-	#
-	#await base.get_tree().physics_frame
-	#var changed = editor_settings.get_changed_settings()
-	#for setting in changed:
-		#if setting_refresh_filter.has(setting):
-			#change_theme_color(Color(editor_settings.get("interface/theme/base_color"), settings["ui_color"]))
-			#return
-
 func change_setting(value:Variant, setting:String, update_ui:bool = false, update_setting:bool = true):
 	var is_prev_ready := is_instance_valid(tool)
-	#print("[SET] ", setting, " = ", value)
 	match setting:
 		"image":
 			var img := load_image(value)
@@ -102,7 +84,6 @@ func change_setting(value:Variant, setting:String, update_ui:bool = false, updat
 				else:
 					value = tool.get_node("HBoxContainer/VBoxContainer2/ui_color").color
 			if not update_ui && update_setting:
-				#change_theme_color(Color(editor_settings.get("interface/theme/base_color"), value))
 				if value == Color(settings["ui_color"]): return
 				change_theme_color(value)
 				settings["ui_color"] = value.to_html()
@@ -158,18 +139,13 @@ func _setting_changed(setting:String):
 		"interface/theme/accent_color":
 			change_theme_color(Color(settings["ui_color"]))
 
-#var new_theme:Theme
 func change_theme_color(col:Color):
 	#Benchmark.start("change theme color")
 	
 	accent_color = editor_settings.get_setting("interface/theme/accent_color")
 	
-	#new_theme = theme.duplicate(true)
 	var controls_list = get_all_controls([base])
 
-	#for node:Control in controls_list:
-		#node.begin_bulk_theme_override()
-	
 	var col2 := Color(col, col.a/2.0)
 	var col3 := Color(col, min(col.a/col.v, col.a/4.0))
 	change_color("EditorStyles", "Background", col)
