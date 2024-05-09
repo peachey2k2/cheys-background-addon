@@ -157,9 +157,11 @@ func change_theme_color(col:Color):
 	change_color("TabContainer", "panel", col)
 	change_color("TabContainer", "tab_selected", col, accent_color)
 	change_color("TabContainer", "tab_unselected", col2)
+	change_color("TabContainer", "tab_hovered", col2)
 	
 	change_color("TabBar", "tab_selected", col, accent_color)
 	change_color("TabBar", "tab_unselected", col2)
+	change_color("TabBar", "tab_hovered", col2)
 	
 	change_color("TabContainerOdd", "tab_selected", col, accent_color)
 	change_color("TabContainerOdd", "panel", col2)
