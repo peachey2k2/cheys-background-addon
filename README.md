@@ -13,7 +13,7 @@ You can also download it from the [asset library](https://godotengine.org/asset-
 Simply go to `Project > Tools > Backgrounds`. That should open up the configuration window.
 
 > [!NOTE]
-> Changing the UI color might freeze your editor for a second or two. Don't worry, that's supposed to happen.
+> Changing the UI color might freeze your editor for a second or two. Don't worry, that's normal. Godot just takes time to refresh all the theming.
 
 ![image](https://github.com/peachey2k2/cheys-background-addon/assets/100072467/c6d28ac6-733e-4112-8511-ceb0f2cc5c5a)
 
