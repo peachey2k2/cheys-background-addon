@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://cqkxegtagb5ts"]
 
-[ext_resource type="Script" path="res://addons/cba/tool.gd" id="1_yg3st"]
+[ext_resource type="Script" uid="uid://d08kr32g2gva0" path="res://addons/cba/tool.gd" id="1_yg3st"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l27jc"]
 content_margin_left = 6.0
@@ -29,9 +29,9 @@ Panel/styles/panel = SubResource("StyleBoxFlat_p8vlj")
 [node name="Tool" type="Window"]
 title = "Chey's Background Addon"
 initial_position = 5
-size = Vector2i(400, 350)
-min_size = Vector2i(400, 350)
-max_size = Vector2i(400, 300)
+size = Vector2i(400, 400)
+min_size = Vector2i(400, 400)
+max_size = Vector2i(400, 400)
 script = ExtResource("1_yg3st")
 
 [node name="Panel" type="Panel" parent="."]
@@ -42,45 +42,42 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_csmr1")
 
-[node name="PanelContainer" type="PanelContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
 clip_contents = true
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = -125.0
+offset_bottom = 32.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(0, 230)
+layout_mode = 2
 theme = SubResource("Theme_csmr1")
 
-[node name="TextureRect" type="TextureRect" parent="PanelContainer"]
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/PanelContainer"]
 layout_mode = 2
 expand_mode = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-anchors_preset = -1
-anchor_top = 0.907
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 2.0
-offset_top = -89.45
-offset_right = 6.0
-offset_bottom = 53.0004
-grow_horizontal = 2
-grow_vertical = 0
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
 size_flags_vertical = 3
 theme = SubResource("Theme_csmr1")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
-custom_minimum_size = Vector2(196, 175)
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
 
-[node name="image picker" type="Button" parent="HBoxContainer/VBoxContainer"]
+[node name="image picker" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 37)
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
 text = "Pick an image"
 
-[node name="stretch mode" type="OptionButton" parent="HBoxContainer/VBoxContainer"]
+[node name="stretch mode" type="OptionButton" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
 clip_contents = true
 custom_minimum_size = Vector2(0, 37)
 layout_mode = 2
@@ -102,7 +99,7 @@ popup/item_5/id = 5
 popup/item_6/text = "Keep Aspect Covered"
 popup/item_6/id = 6
 
-[node name="filter mode" type="OptionButton" parent="HBoxContainer/VBoxContainer"]
+[node name="filter mode" type="OptionButton" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
 clip_contents = true
 custom_minimum_size = Vector2(0, 37)
 layout_mode = 2
@@ -122,29 +119,54 @@ popup/item_4/id = 4
 popup/item_5/text = "Linear Mipmap Anisotropic"
 popup/item_5/id = 5
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
-custom_minimum_size = Vector2(196, 175)
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+clip_contents = true
 layout_mode = 2
+size_flags_horizontal = 3
 theme = SubResource("Theme_csmr1")
 
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer2"]
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
+size_flags_vertical = 0
 theme_override_constants/line_spacing = -6
 text = "UI Color
 (close picker to change)"
 horizontal_alignment = 1
 
-[node name="ui_color" type="ColorPickerButton" parent="HBoxContainer/VBoxContainer2"]
+[node name="ui_color" type="ColorPickerButton" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
 custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
+size_flags_vertical = 0
 size_flags_stretch_ratio = 0.0
 
-[node name="Label2" type="Label" parent="HBoxContainer/VBoxContainer2"]
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
+size_flags_vertical = 0
 text = "Background Modulate"
 horizontal_alignment = 1
 
-[node name="bg_modulate" type="ColorPickerButton" parent="HBoxContainer/VBoxContainer2"]
+[node name="bg_modulate" type="ColorPickerButton" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
 custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
+size_flags_vertical = 0
 size_flags_stretch_ratio = 0.0
+
+[node name="edit_transparency" type="CheckBox" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 2
+size_flags_stretch_ratio = 0.38
+tooltip_text = "For some reason, when editing an inspector field, Godot
+still displays the previous state of it behind the current one.
+Also, for some reason, when renaming a node in the scene
+tab, the rename box opens in a separate window, which
+ruins the transparency and makes it more gray. So as a hack,
+this plugin turns text boxes black when editing. If you think
+the prior is a better alternative, you can switch to that here."
+text = "Enable textbox transparency on edit (?)"
+
+[node name="Control" type="Control" parent="VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_vertical = 0
+size_flags_stretch_ratio = 1.21

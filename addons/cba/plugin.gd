@@ -69,20 +69,20 @@ func change_setting(value:Variant, setting:String, update_ui:bool = false, updat
 			if is_prev_ready:
 				tool.preview.stretch_mode = value
 				if update_ui:
-					tool.get_node("HBoxContainer/VBoxContainer/stretch mode").select(value)
+					tool.get_node("VBoxContainer/HBoxContainer/VBoxContainer/stretch mode").select(value)
 		"filter":
 			if update_setting: bg.texture_filter = value
 			if is_prev_ready:
 				tool.preview.texture_filter = value
 				if update_ui:
-					tool.get_node("HBoxContainer/VBoxContainer/filter mode").select(value)
+					tool.get_node("VBoxContainer/HBoxContainer/VBoxContainer/filter mode").select(value)
 		"ui_color":
 			if is_prev_ready:
 				if update_ui:
 					value = Color(settings["ui_color"])
-					tool.get_node("HBoxContainer/VBoxContainer2/ui_color").color = value
+					tool.get_node("VBoxContainer/HBoxContainer/VBoxContainer2/ui_color").color = value
 				else:
-					value = tool.get_node("HBoxContainer/VBoxContainer2/ui_color").color
+					value = tool.get_node("VBoxContainer/HBoxContainer/VBoxContainer2/ui_color").color
 			if not update_ui && update_setting:
 				if value == Color(settings["ui_color"]): return
 				change_theme_color(value)
@@ -94,8 +94,20 @@ func change_setting(value:Variant, setting:String, update_ui:bool = false, updat
 			if is_prev_ready:
 				tool.preview.modulate = value
 				if update_ui:
-					tool.get_node("HBoxContainer/VBoxContainer2/bg_modulate").color = value
+					tool.get_node("VBoxContainer/HBoxContainer/VBoxContainer2/bg_modulate").color = value
 			value = value.to_html()
+		"edit_transparency":
+			if is_prev_ready:
+				if update_ui:
+					value = settings["edit_transparency"]
+					tool.get_node("VBoxContainer/edit_transparency").button_pressed = value
+				else:
+					value = tool.get_node("VBoxContainer/edit_transparency").button_pressed
+			if not update_ui && update_setting:
+				if value == settings["edit_transparency"]: return
+				settings["edit_transparency"] = value
+				change_theme_color(Color(settings["ui_color"]))
+				value = null
 	if value != null: settings[setting] = value
 
 func load_image(path:String) -> Texture2D:
@@ -123,6 +135,7 @@ func load_settings():
 			"stretch": 1,
 			"ui_color": "00000088",
 			"bg_modulate": "ffffffb0",
+			"edit_transparency": false,
 		}
 		file.store_string(JSON.stringify(defaults, "\t"))
 		settings = defaults
@@ -172,13 +185,18 @@ func change_theme_color(col:Color):
 	change_color("OptionButton", "normal", col3)
 	change_color("RichTextLabel", "normal", col3)
 	change_color("LineEdit", "normal", col3)
+	change_color("TextEdit", "normal", col3)
 	change_color("LineEdit", "read_only", col3)
+	change_color("TextEdit", "read_only", col3)
 	change_color("EditorProperty", "child_bg", col3)
 	
 	change_color("EditorInspectorCategory", "bg", col2)
 	
 	# fix to old values showing up in transparent preview
-	change_color("LineEdit", "focus", Color.BLACK)
+	if settings["edit_transparency"]:
+		change_color("LineEdit", "focus", col3)
+	else:
+		change_color("LineEdit", "focus", Color.BLACK)
 	
 	# trigger an update
 	theme.get_stylebox("Background", "EditorStyles").emit_changed()
