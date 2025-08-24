@@ -156,8 +156,6 @@ func change_theme_color(col:Color):
 	#Benchmark.start("change theme color")
 	
 	accent_color = editor_settings.get_setting("interface/theme/accent_color")
-	
-	var controls_list = get_all_controls([base])
 
 	var col2 := Color(col, col.a/2.0)
 	var col3 := Color(col, min(col.a/col.v, col.a/4.0))
@@ -202,14 +200,6 @@ func change_theme_color(col:Color):
 	theme.get_stylebox("Background", "EditorStyles").emit_changed()
 	
 	#Benchmark.end("change theme color")
-
-func get_all_controls(nodes:Array[Node]) -> Array[Node]:
-	var out:Array[Node] = []
-	for node in nodes:
-		if node is Control: out.append(node)
-		var children := node.get_children() as Array[Node]
-		out += get_all_controls(children)
-	return out
 
 func change_color(type:String, name:String, col:Color, border = null):
 	var box:StyleBoxFlat = theme.get_stylebox(name, type)

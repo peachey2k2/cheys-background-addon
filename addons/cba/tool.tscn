@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://cqkxegtagb5ts"]
 
-[ext_resource type="Script" uid="uid://d08kr32g2gva0" path="res://addons/cba/tool.gd" id="1_yg3st"]
+[ext_resource type="Script" uid="uid://bu0hlhvnonhk0" path="res://addons/cba/tool.gd" id="1_yg3st"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l27jc"]
 content_margin_left = 6.0
