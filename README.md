@@ -5,20 +5,25 @@ A simple plugin to put a background image behind your Godot editor.
 ![image](https://github.com/peachey2k2/cheys-background-addon/assets/100072467/fe1286ab-337e-456c-9a2d-4d7a482f399c)
 
 # Installation
-You can download it from the [asset library](https://godotengine.org/asset-library/asset/2933), which you can also use within the editor.
-
-Then enable the plugin from `Project > Project Settings > Plugins`. It will probably freeze for a couple seconds. That's intended. 
-
+1. Download `cba.tres` and put it in an accessible place.
+2. Open up your **Editor Settings**, then go to the **Theme** tab (under *Interface*).
+3. Scroll down to **Custom theme** (you'll need to enable *Advanced Settings* to see it), set it to the theme file you just downloaded.
+4. Click on **Save & Restart**.
 
 # Configuration
 Simply go to `Project > Tools > Backgrounds`. That should open up the configuration window.
 
-All the configuration is stored in `addons/cba/config.json`.
+All the configuration is stored in `cba.json`, at the directory you've placed the `cba.tres` file.
+
+Some important things:
+- Don't forget to change the stretch and filter modes after placing an image.
+- The theme respects the base and accent colors in the editor settings.
+
+![image](https://github.com/peachey2k2/cheys-background-addon/assets/100072467/c6d28ac6-733e-4112-8511-ceb0f2cc5c5a)
 
 > [!NOTE]
 > Changing the UI color might freeze your editor for a second or two. Don't worry, that's normal. Godot just takes time to refresh all the theming.
 
-![image](https://github.com/peachey2k2/cheys-background-addon/assets/100072467/c6d28ac6-733e-4112-8511-ceb0f2cc5c5a)
 
 # Support
 If you have a problem with the plugin, just come to my Discord server and I'll try to help.
