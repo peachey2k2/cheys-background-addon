@@ -1,0 +1,872 @@
+[gd_resource type="Theme" load_steps=57 format=3 uid="uid://beyvam26q31s2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6rrxc"]
+content_margin_left = 6.0
+content_margin_top = 5.0
+content_margin_right = 6.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 0.13333334)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.47788, 0.47788, 0.47788, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4bdji"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_55noc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1x8l7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x4bf7"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0.26666668)
+border_color = Color(0.25098, 0.266667, 0.298039, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qm4uc"]
+bg_color = Color(0, 0, 0, 0.13333334)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kmfvt"]
+bg_color = Color(0, 0, 0, 0.53333336)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1tn6y"]
+content_margin_left = 4.0
+content_margin_top = 6.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0.53333336)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mfvec"]
+content_margin_left = 4.0
+content_margin_top = 0.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0.53333336)
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yxe5q"]
+bg_color = Color(0.617575, 0.626378, 0.219465, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wrepn"]
+bg_color = Color(0, 0, 0, 0.53333336)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4qoyy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bae5w"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hqa07"]
+bg_color = Color(0.71993, 0.58247, 0.18956, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jbgu4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7xbe2"]
+content_margin_left = 2.0
+content_margin_top = 0.0
+content_margin_right = 2.0
+content_margin_bottom = 0.0
+bg_color = Color(0, 0, 0, 0.53333336)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eag6m"]
+bg_color = Color(0.266667, 0.647059, 0.819608, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nn8ly"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yi1o1"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1rdkl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lvnv7"]
+content_margin_left = 11.0
+content_margin_top = 5.0
+content_margin_right = 11.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 0.53333336)
+border_width_top = 2
+border_color = Color(0.8837855, 0.65796375, 0.21764055, 1)
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ebp5u"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7l2sj"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cbyhm"]
+content_margin_left = 6.0
+content_margin_top = 4.0
+content_margin_right = 6.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 0.13333334)
+border_width_bottom = 2
+border_color = Color(0.113725, 0.133333, 0.160784, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cjlww"]
+content_margin_left = 6.0
+content_margin_top = 4.0
+content_margin_right = 6.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 0.13333334)
+border_width_bottom = 2
+border_color = Color(0.113725, 0.133333, 0.160784, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xi4cy"]
+content_margin_left = 6.0
+content_margin_top = 5.0
+content_margin_right = 6.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 0.13333334)
+border_color = Color(0.501961, 0.501961, 0.501961, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_thgut"]
+content_margin_left = 6.0
+content_margin_top = 5.0
+content_margin_right = 6.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 0.13333334)
+border_color = Color(0.501961, 0.501961, 0.501961, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4rkfj"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0.13333334)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.301961, 0.301961, 0.301961, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nt114"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jlb1y"]
+content_margin_left = 11.0
+content_margin_top = 5.0
+content_margin_right = 11.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 0.26666668)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ve3ye"]
+content_margin_left = 11.0
+content_margin_top = 5.0
+content_margin_right = 11.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 0.26666668)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kcmrn"]
+content_margin_left = 4.0
+content_margin_top = 6.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0.53333336)
+border_color = Color(0.900808, 0.647855, 0.245012, 1)
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_55yid"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e473q"]
+content_margin_left = 11.0
+content_margin_top = 5.0
+content_margin_right = 11.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 0.26666668)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gir5j"]
+content_margin_left = 11.0
+content_margin_top = 5.0
+content_margin_right = 11.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 0.53333336)
+border_width_top = 2
+border_color = Color(0.8837855, 0.65796375, 0.21764055, 1)
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_th0sh"]
+content_margin_left = 11.0
+content_margin_top = 5.0
+content_margin_right = 11.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 0.26666668)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_og5m1"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0, 0, 0, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_prlgo"]
+content_margin_left = 4.0
+content_margin_top = 6.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0.26666668)
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3wvl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4n6md"]
+content_margin_left = 11.0
+content_margin_top = 5.0
+content_margin_right = 11.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 0.53333336)
+border_width_top = 2
+border_color = Color(0.8837855, 0.65796375, 0.21764055, 1)
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4bdji"]
+bg_color = Color(0, 0, 0, 0.12451)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1gbrb"]
+content_margin_left = 6.0
+content_margin_top = 4.0
+content_margin_right = 6.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 0.13333334)
+border_width_bottom = 2
+border_color = Color(0.113725, 0.133333, 0.160784, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gfc5e"]
+content_margin_left = 6.0
+content_margin_top = 4.0
+content_margin_right = 6.0
+content_margin_bottom = 5.0
+bg_color = Color(0, 0, 0, 0.13333334)
+border_width_bottom = 2
+border_color = Color(0.113725, 0.133333, 0.160784, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_detail = 3
+anti_aliasing = false
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c0v5a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6d6lh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l27jc"]
+content_margin_left = 6.0
+content_margin_right = 6.0
+bg_color = Color(0.423529, 0.266667, 0.215686, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.691357, 0.691357, 0.691357, 1)
+shadow_color = Color(0, 0, 0, 0.729412)
+shadow_size = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_55noc"]
+content_margin_left = 6.0
+content_margin_right = 6.0
+bg_color = Color(0.29825014, 0.18079802, 0.1426251, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.691357, 0.691357, 0.691357, 1)
+shadow_color = Color(0, 0, 0, 0.729412)
+shadow_size = 2
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ge6sa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_egvxo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u4qjr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cp2c6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2qn53"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5s6hr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p8vlj"]
+bg_color = Color(0.177332, 0.180983, 0.215343, 1)
+
+[sub_resource type="Theme" id="Theme_csmr1"]
+Button/font_sizes/font_size = 14
+Button/styles/focus = SubResource("StyleBoxEmpty_6d6lh")
+Button/styles/hover = SubResource("StyleBoxFlat_l27jc")
+Button/styles/normal = SubResource("StyleBoxFlat_l27jc")
+Button/styles/pressed = SubResource("StyleBoxFlat_55noc")
+CheckButton/styles/focus = SubResource("StyleBoxEmpty_ge6sa")
+CheckButton/styles/hover = SubResource("StyleBoxEmpty_egvxo")
+CheckButton/styles/hover_pressed = SubResource("StyleBoxEmpty_u4qjr")
+CheckButton/styles/normal = SubResource("StyleBoxEmpty_cp2c6")
+CheckButton/styles/pressed = SubResource("StyleBoxEmpty_2qn53")
+ColorPickerButton/styles/normal = SubResource("StyleBoxEmpty_5s6hr")
+Label/font_sizes/font_size = 14
+Panel/styles/panel = SubResource("StyleBoxFlat_p8vlj")
+
+[sub_resource type="GDScript" id="GDScript_1x8l7"]
+script/source = "@tool
+extends Theme
+
+
+var config_panel:ThemeConfigPanel = null
+var plugin:EditorPlugin = null
+
+var bg:TextureRect = null
+var settings:Dictionary = {}
+var config_path:String
+var default_image_path:String
+
+@export var cfg_theme:Theme
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_PREDELETE:
+		if config_panel != null:
+			# NOTE: godot seems to just ignore the plugin context so this is fine
+			# https://github.com/godotengine/godot/blob/8105ff7ac735f83be221296a6bb9b22caa7d9253/editor/plugins/editor_plugin.cpp#L233
+			plugin.remove_tool_menu_item('Backgrounds')
+			config_panel.queue_free()
+			config_panel = null
+
+		bg.queue_free()
+
+static var singleton: Theme = null
+
+func _init() -> void:
+	# if not Engine.is_editor_hint(): return
+	# No editor hint guards, since we don't 'really' run it in the editor.
+
+	# And even if we run in the editor, we still need to wait for it to first initialize itself.
+	# Thus we need to defer rest of the code. Otherwise `get_base_control()` will return null.
+
+	# We have to use a lambda too because it seems to be the only way to have async in here.
+	# Await doesn't work, neither does deferring an actual function (that isn't a lambda)
+	# and I don't really know why.
+
+	if singleton:
+		singleton.queue_free()
+		singleton = self
+
+	var initialize_theme = func():
+		if EditorInterface.get_script_editor() == null: return
+
+		plugin = EditorPlugin.new()
+		config_path = resource_path.get_base_dir().path_join('cba.json')
+		default_image_path = resource_path.get_base_dir().path_join('default.png')
+		var base = EditorInterface.get_base_control()
+
+		if not base:
+			push_error('failed to get base control')
+			return
+
+
+		bg = TextureRect.new()
+		bg.name = 'Editor Background'
+		bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		bg.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		bg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		base.add_child.call_deferred(bg)
+		# move it to the top of the tree so it's behind all the UI
+		base.move_child.call_deferred(bg, 0)
+
+
+		load_settings()
+
+
+		config_panel = ThemeConfigPanel.new()
+		config_panel.main = self
+		config_panel.initialize()
+
+		plugin.add_tool_menu_item('Backgrounds', func():
+			if config_panel.visible:
+				printerr('There is already a background picker window open.')
+				return
+
+			EditorInterface.get_base_control().add_child(config_panel)
+			config_panel.start()
+		)
+
+	initialize_theme.call_deferred()
+
+func change_setting(value:Variant, setting:String, update_ui:bool = false, update_setting:bool = true):
+	var is_prev_ready := is_instance_valid(config_panel)
+	match setting:
+		'image':
+			var img := load_image(value)
+			if is_prev_ready: config_panel.texture_rect.texture = img
+			if update_setting: bg.texture = img
+		'stretch':
+			if update_setting: bg.stretch_mode = value
+			if is_prev_ready:
+				config_panel.texture_rect.stretch_mode = value
+				if update_ui:
+					config_panel.stretch_mode.select(value)
+		'filter':
+			if update_setting: bg.texture_filter = value
+			if is_prev_ready:
+				config_panel.texture_rect.texture_filter = value
+				if update_ui:
+					config_panel.filter_mode.select(value)
+		'ui_color':
+			if is_prev_ready:
+				if update_ui:
+					value = Color(settings['ui_color'])
+					config_panel.ui_color.color = value
+				else:
+					value = config_panel.ui_color.color
+			if not update_ui && update_setting:
+				if value == Color(settings['ui_color']): return
+				change_theme_color(value)
+				settings['ui_color'] = value.to_html()
+			value = null
+		'bg_modulate':
+			if value is String: value = Color(value)
+			if update_setting: bg.modulate = value
+			if is_prev_ready:
+				config_panel.texture_panel.modulate = value
+				if update_ui:
+					config_panel.bg_modulate.color = value
+			value = value.to_html()
+		'edit_transparency':
+			if is_prev_ready:
+				if update_ui:
+					value = settings['edit_transparency']
+					config_panel.edit_transparency.button_pressed = value
+				else:
+					value = config_panel.edit_transparency.button_pressed
+			if not update_ui && update_setting:
+				if value == settings['edit_transparency']: return
+				settings['edit_transparency'] = value
+				change_theme_color(Color(settings['ui_color']))
+				value = null
+	if value != null: settings[setting] = value
+
+func load_image(path:String) -> Texture2D:
+	var file := FileAccess.open(path, FileAccess.READ)
+	if file == null: printerr('file not found: ', path); return
+	var image = Image.load_from_file(path)
+	var out = ImageTexture.create_from_image(image)
+	return out
+
+func load_settings():
+	if FileAccess.file_exists(config_path):
+		var file := FileAccess.open(config_path, FileAccess.READ)
+		if file == null:
+			file = FileAccess.open(config_path, FileAccess.WRITE_READ)
+			assert(file != null, 'Error opening file.')
+			return
+		else:
+			settings = JSON.parse_string(file.get_as_text())
+			file.close()
+	else:
+		var file := FileAccess.open(config_path, FileAccess.WRITE)
+		var defaults := {
+			'filter': 0.0,
+			'image': ProjectSettings.globalize_path(default_image_path),
+			'stretch': 1,
+			'ui_color': '00000088',
+			'bg_modulate': 'ffffffb0',
+			'edit_transparency': false,
+		}
+		file.store_string(JSON.stringify(defaults, '\\t'))
+		settings = defaults
+		file.close()
+	for s in settings.keys():
+		change_setting(settings[s], s, true)
+
+func save_settings():
+	var file := FileAccess.open(config_path, FileAccess.WRITE)
+	file.store_string(JSON.stringify(settings, '\\t'))
+
+func _setting_changed(setting:String):
+	match setting:
+		'interface/theme/accent_color':
+			change_theme_color(Color(settings['ui_color']))
+
+func change_theme_color(col:Color):
+	#Benchmark.start('change theme color')
+	var accent_color =  EditorInterface.get_editor_settings().get_setting('interface/theme/accent_color')
+
+	var col2 := Color(col, col.a/2.0)
+	var col3 := Color(col, min(col.a/col.v, col.a/4.0))
+	change_color('EditorStyles', 'Background', col)
+	change_color('EditorStyles', 'BottomPanel', col)
+	change_color('EditorStyles', 'BottomPanelDebuggerOverride', col)
+	change_color('EditorStyles', 'Content', col)
+	change_color('EditorStyles', 'LaunchPadNormal', col)
+
+	change_color('TabContainer', 'panel', col)
+	change_color('TabContainer', 'tab_selected', col, accent_color)
+	change_color('TabContainer', 'tab_unselected', col2)
+	change_color('TabContainer', 'tab_hovered', col2)
+
+	change_color('TabBar', 'tab_selected', col, accent_color)
+	change_color('TabBar', 'tab_unselected', col2)
+	change_color('TabBar', 'tab_hovered', col2)
+
+	change_color('TabContainerOdd', 'tab_selected', col, accent_color)
+	change_color('TabContainerOdd', 'panel', col2)
+
+	# bordered
+	change_color('Button', 'normal', col3)
+	change_color('MenuButton', 'normal', col3)
+	change_color('OptionButton', 'normal', col3)
+	change_color('RichTextLabel', 'normal', col3)
+	change_color('LineEdit', 'normal', col3)
+	change_color('TextEdit', 'normal', col3)
+	change_color('LineEdit', 'read_only', col3)
+	change_color('TextEdit', 'read_only', col3)
+	change_color('EditorProperty', 'child_bg', col3)
+
+	change_color('EditorInspectorCategory', 'bg', col2)
+
+	# fix to old values showing up in transparent preview
+	if settings['edit_transparency']:
+		change_color('LineEdit', 'focus', col3)
+	else:
+		change_color('LineEdit', 'focus', Color.BLACK)
+
+	# trigger an update
+	get_stylebox('Background', 'EditorStyles').emit_changed()
+
+	#Benchmark.end('change theme color')
+
+func change_color(type:String, name:String, col:Color, border = null):
+	var box:StyleBoxFlat = get_stylebox(name, type)
+	box.set_block_signals(true)
+	box.bg_color = col
+	if border != null:
+		box.border_color = border
+	box.set_block_signals(false)
+
+
+class ThemeConfigPanel extends Window:
+	var main:Theme
+	var cfg_theme: Theme
+
+	                                                 # ── self
+	var panel             := Panel.new()             #    ├── panel
+	var margin            := MarginContainer.new()   #    └── margin
+	var vbox              := VBoxContainer.new()     #        └── vbox
+	var texture_panel     := PanelContainer.new()    #            ├── texture_panel
+	var texture_rect      := TextureRect.new()       #            │   └── texture_rect
+	var hbox              := HBoxContainer.new()     #            ├── hbox
+	var left_column       := VBoxContainer.new()     #            │   ├── left_column
+	var image_picker      := Button.new()            #            │   │   ├── image_picker
+	var stretch_mode      := OptionButton.new()      #            │   │   ├── stretch_mode
+	var filter_mode       := OptionButton.new()      #            │   │   └── filter_mode
+	var right_column      := VBoxContainer.new()     #            │   └── right_column
+	var ui_color_label    := Label.new()             #            │       ├── ui_color_label
+	var ui_color          := ColorPickerButton.new() #            │       ├── ui_color
+	var bg_modulate_label := Label.new()             #            │       ├── bg_modulate_label
+	var bg_modulate       := ColorPickerButton.new() #            │       └── bg_modulate
+	var edit_transparency := CheckButton.new()       #            ├── edit_transparency
+	var padding           := Control.new()           #            └── padding
+
+	func initialize() -> void:
+		@warning_ignore_start('int_as_enum_without_cast')
+		@warning_ignore_start('int_as_enum_without_match')
+
+		cfg_theme = main.cfg_theme
+
+		oversampling_override = 1.0
+		title = 'Chey\\'s Background Addon'
+		initial_position = WINDOW_INITIAL_POSITION_CENTER_SCREEN_WITH_KEYBOARD_FOCUS
+		size = Vector2i(400, 400)
+		min_size = Vector2i(400, 400)
+		max_size = Vector2i(400, 400)
+
+		panel.anchors_preset = 15
+		panel.anchor_right = 1.0
+		panel.anchor_bottom = 1.0
+		panel.grow_horizontal = 2
+		panel.grow_vertical = 2
+		panel.theme = cfg_theme
+		add_child(panel)
+
+		margin.anchors_preset = 15
+		margin.anchor_right = 1.0
+		margin.anchor_bottom = 1.0
+		margin.grow_horizontal = 2
+		margin.grow_vertical = 2
+		margin.theme = cfg_theme
+		margin.add_theme_constant_override('margin_left', 5)
+		margin.add_theme_constant_override('margin_top', 5)
+		margin.add_theme_constant_override('margin_right', 5)
+		margin.add_theme_constant_override('margin_bottom', 5)
+		add_child(margin)
+
+		vbox.clip_contents = true
+		vbox.anchors_preset = 15
+		vbox.anchor_right = 1.0
+		vbox.anchor_bottom = 1.0
+		vbox.offset_bottom = 32.0
+		vbox.grow_horizontal = 2
+		vbox.grow_vertical = 2
+		vbox.add_theme_constant_override('separation', 8)
+		margin.add_child(vbox)
+
+		texture_panel.clip_contents = true
+		texture_panel.custom_minimum_size = Vector2(0, 230)
+		texture_panel.layout_mode = 2
+		texture_panel.theme = cfg_theme
+		vbox.add_child(texture_panel)
+
+		texture_rect.layout_mode = 2
+		texture_rect.expand_mode = 1
+		texture_panel.add_child(texture_rect)
+
+		hbox.layout_mode = 2
+		hbox.size_flags_vertical = 3
+		hbox.theme = cfg_theme
+		hbox.add_theme_constant_override('separation', 8)
+		vbox.add_child(hbox)
+
+		left_column.layout_mode = 2
+		left_column.size_flags_horizontal = 3
+		left_column.size_flags_vertical = 0
+		left_column.add_theme_constant_override('separation', 8)
+		hbox.add_child(left_column)
+
+		image_picker.custom_minimum_size = Vector2(0, 37)
+		image_picker.layout_mode = 2
+		image_picker.size_flags_stretch_ratio = 0.0
+		image_picker.text = 'Pick an image'
+		left_column.add_child(image_picker)
+
+		stretch_mode.clip_contents = true
+		stretch_mode.custom_minimum_size = Vector2(0, 37)
+		stretch_mode.layout_mode = 2
+		stretch_mode.size_flags_stretch_ratio = 0.0
+		stretch_mode.clip_text = true
+		stretch_mode.add_item('Scale', 0)
+		stretch_mode.add_item('Tile', 1)
+		stretch_mode.add_item('Keep', 2)
+		stretch_mode.add_item('Keep Centered', 3)
+		stretch_mode.add_item('Keep Aspect', 4)
+		stretch_mode.add_item('Keep Aspect Centered', 5)
+		stretch_mode.add_item('Keep Aspect Covered', 6)
+		left_column.add_child(stretch_mode)
+
+		filter_mode.clip_contents = true
+		filter_mode.custom_minimum_size = Vector2(0, 37)
+		filter_mode.layout_mode = 2
+		filter_mode.size_flags_stretch_ratio = 0.0
+		filter_mode.clip_text = true
+		filter_mode.add_item('Nearest', 0)
+		filter_mode.add_item('Linear', 1)
+		filter_mode.add_item('Nearest Mipmap', 2)
+		filter_mode.add_item('Linear Mipmap', 3)
+		filter_mode.add_item('Nearest Mipmap Anisotropic', 4)
+		filter_mode.add_item('Linear Mipmap Anisotropic', 5)
+		left_column.add_child(filter_mode)
+
+		right_column.clip_contents = true
+		right_column.layout_mode = 2
+		right_column.size_flags_horizontal = 3
+		right_column.theme = cfg_theme
+		right_column.add_theme_constant_override('separation', 8)
+		hbox.add_child(right_column)
+
+		ui_color_label.layout_mode = 2
+		ui_color_label.size_flags_vertical = 0
+		ui_color_label.add_theme_constant_override('line_spacing', -6)
+		ui_color_label.text = 'UI Color\\n(close picker to change)'
+		ui_color_label.horizontal_alignment = 1
+		right_column.add_child(ui_color_label)
+
+		ui_color.custom_minimum_size = Vector2(0, 20)
+		ui_color.layout_mode = 2
+		ui_color.size_flags_vertical = 0
+		ui_color.size_flags_stretch_ratio = 0.0
+		right_column.add_child(ui_color)
+
+		bg_modulate_label.layout_mode = 2
+		bg_modulate_label.size_flags_vertical = 0
+		bg_modulate_label.text = 'Background Modulate'
+		bg_modulate_label.horizontal_alignment = 1
+		right_column.add_child(bg_modulate_label)
+
+		bg_modulate.custom_minimum_size = Vector2(0, 20)
+		bg_modulate.layout_mode = 2
+		bg_modulate.size_flags_vertical = 0
+		bg_modulate.size_flags_stretch_ratio = 0.0
+		right_column.add_child(bg_modulate)
+
+		edit_transparency.layout_mode = 2
+		edit_transparency.size_flags_vertical = 2
+		edit_transparency.size_flags_stretch_ratio = 0.38
+		edit_transparency.tooltip_text = 'For some reason, when editing an inspector field, Godot\\nstill displays the previous state of it behind the current one.\\nAlso, for some reason, when renaming a node in the scene\\ntab, the rename box opens in a separate window, which\\nruins the transparency and makes it more gray. So as a hack,\\nthis plugin turns text boxes black when editing. If you think\\nthe prior is a better alternative, you can switch to that here.'
+		edit_transparency.text = 'Enable textbox transparency on edit (?)'
+		vbox.add_child(edit_transparency)
+
+		padding.clip_contents = true
+		padding.custom_minimum_size = Vector2(0, 40)
+		padding.layout_mode = 2
+		padding.size_flags_vertical = 0
+		padding.size_flags_stretch_ratio = 1.21
+		vbox.add_child(padding)
+
+		image_picker.pressed.connect(_image_picker)
+		stretch_mode.item_selected.connect(main.change_setting.bind('stretch'))
+		filter_mode.item_selected.connect(main.change_setting.bind('filter'))
+		ui_color.popup_closed.connect(main.change_setting.bind(null, 'ui_color'))
+		bg_modulate.color_changed.connect(main.change_setting.bind('bg_modulate'))
+		edit_transparency.toggled.connect(main.change_setting.bind('edit_transparency'))
+		close_requested.connect(close)
+
+		hide()
+
+	func start():
+		main.load_settings()
+		popup_centered()
+
+	func _input(event):
+		if event.is_action_pressed(\"ui_cancel\"):
+			close()
+
+	func close():
+		main.save_settings()
+		hide()
+
+	func _image_picker():
+		var picker := EditorFileDialog.new()
+		picker.close_requested.connect(queue_free)
+		picker.file_selected.connect(main.change_setting.bind(\"image\"))
+		picker.size = Vector2(700, 500)
+		picker.access = EditorFileDialog.ACCESS_FILESYSTEM
+		picker.file_mode = EditorFileDialog.FILE_MODE_OPEN_FILE
+		picker.filters = [\"*.bmp, *.dds, *.exr, *.hdr, *.jpg, *.jpeg, *.png, *.tga, *.svg, *.svgz, *.webp; Supported Images\"]
+		add_child(picker)
+		picker.popup_centered()
+"
+
+[resource]
+Button/styles/normal = SubResource("StyleBoxFlat_6rrxc")
+CodeEdit/styles/normal = SubResource("StyleBoxEmpty_4bdji")
+EditorHelp/styles/background = SubResource("StyleBoxEmpty_55noc")
+EditorInspector/styles/panel = SubResource("StyleBoxEmpty_1x8l7")
+EditorInspectorCategory/styles/bg = SubResource("StyleBoxFlat_x4bf7")
+EditorProperty/styles/child_bg = SubResource("StyleBoxFlat_qm4uc")
+EditorStyles/styles/Background = SubResource("StyleBoxFlat_kmfvt")
+EditorStyles/styles/BottomPanel = SubResource("StyleBoxFlat_1tn6y")
+EditorStyles/styles/BottomPanelDebuggerOverride = SubResource("StyleBoxFlat_mfvec")
+EditorStyles/styles/CanvasItemInfoOverlay = SubResource("StyleBoxFlat_yxe5q")
+EditorStyles/styles/Content = SubResource("StyleBoxFlat_wrepn")
+EditorStyles/styles/ContextualToolbar = SubResource("StyleBoxEmpty_4qoyy")
+EditorStyles/styles/DebuggerPanel = SubResource("StyleBoxFlat_bae5w")
+EditorStyles/styles/DictionaryAddItem = SubResource("StyleBoxFlat_hqa07")
+EditorStyles/styles/Focus = SubResource("StyleBoxFlat_jbgu4")
+EditorStyles/styles/LaunchPadNormal = SubResource("StyleBoxFlat_7xbe2")
+EditorStyles/styles/MenuPanel = SubResource("StyleBoxFlat_eag6m")
+EditorStyles/styles/PanelForeground = null
+EditorStyles/styles/ScriptEditor = SubResource("StyleBoxEmpty_nn8ly")
+EditorStyles/styles/ScriptEditorPanel = SubResource("StyleBoxFlat_yi1o1")
+EditorStyles/styles/ThemeEditorPreviewBG = SubResource("StyleBoxEmpty_1rdkl")
+EditorStyles/styles/ThemeEditorPreviewFG = SubResource("StyleBoxFlat_lvnv7")
+ItemList/styles/panel = SubResource("StyleBoxEmpty_ebp5u")
+LineEdit/styles/focus = SubResource("StyleBoxFlat_7l2sj")
+LineEdit/styles/normal = SubResource("StyleBoxFlat_cbyhm")
+LineEdit/styles/read_only = SubResource("StyleBoxFlat_cjlww")
+MenuButton/styles/normal = SubResource("StyleBoxFlat_xi4cy")
+OptionButton/styles/normal = SubResource("StyleBoxFlat_thgut")
+RichTextLabel/styles/normal = SubResource("StyleBoxFlat_4rkfj")
+TabBar/styles/tab_focus = SubResource("StyleBoxEmpty_nt114")
+TabBar/styles/tab_hovered = SubResource("StyleBoxFlat_jlb1y")
+TabBar/styles/tab_selected = SubResource("StyleBoxFlat_lvnv7")
+TabBar/styles/tab_unselected = SubResource("StyleBoxFlat_ve3ye")
+TabContainer/styles/panel = SubResource("StyleBoxFlat_kcmrn")
+TabContainer/styles/tab_focus = SubResource("StyleBoxEmpty_55yid")
+TabContainer/styles/tab_hovered = SubResource("StyleBoxFlat_e473q")
+TabContainer/styles/tab_selected = SubResource("StyleBoxFlat_gir5j")
+TabContainer/styles/tab_unselected = SubResource("StyleBoxFlat_th0sh")
+TabContainer/styles/tabbar_background = SubResource("StyleBoxFlat_og5m1")
+TabContainerOdd/styles/panel = SubResource("StyleBoxFlat_prlgo")
+TabContainerOdd/styles/tab_focus = SubResource("StyleBoxEmpty_x3wvl")
+TabContainerOdd/styles/tab_selected = SubResource("StyleBoxFlat_4n6md")
+TextEdit/styles/focus = SubResource("StyleBoxFlat_4bdji")
+TextEdit/styles/normal = SubResource("StyleBoxFlat_1gbrb")
+TextEdit/styles/read_only = SubResource("StyleBoxFlat_gfc5e")
+Tree/styles/panel = SubResource("StyleBoxEmpty_c0v5a")
+script = SubResource("GDScript_1x8l7")
+cfg_theme = SubResource("Theme_csmr1")
